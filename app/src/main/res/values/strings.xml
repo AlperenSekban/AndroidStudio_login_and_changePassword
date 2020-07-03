@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Change_Password</string>
+    <string name="common_username"> Username</string>
+    <string name="common_password"> Password</string>
+    <string name="activity_main_logInBtn">LOG IN</string>
+    <string name="activity_main_toastMessage_wrongLogIn">Kullanıcı adı veya şifrenizi yanlış girdiniz...</string>
+    <string name="common_changeButton">Change Password</string>
+    <string name="common_newPassword">New password</string>
+    <string name="activity_password_change_screen_toastMessage_minimumSixCharacter">Şifreniz minimum 6 karakter içermek zorundadır</string>
+    <string name="activity_password_change_screen_toastMessage_punctuation">Şifreniz noktalama işareti içermek zorundadır</string>
+    <string name="activity_password_change_screen_toastMessage_upperLatter">Şifreniz büyük harf içermek zorundadır</string>
+    <string name="activity_password_change_screen_toastMessage_null">Şifre alanı boş bırakılamaz</string>
 </resources>

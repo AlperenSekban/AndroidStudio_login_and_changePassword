@@ -7,48 +7,45 @@
     tools:context=".MainActivity">
 
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorAccent"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/userNameTxt"
-            android:layout_width="250dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="75dp"
-            android:layout_marginTop="250dp"
-            android:drawableLeft="@drawable/ic_action_username"
-            android:hint=" Username"
-            android:inputType="textPersonName"
-            android:textColor="@color/colorwhite">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_main_username_textInputLayout"
+                style="@style/common_textInputLayout"
+                android:drawableLeft="@drawable/ic_action_username"
+                android:hint="@string/common_username"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorWhite"
+                android:theme="@style/MyEditText">
 
 
-        </com.google.android.material.textfield.TextInputEditText>
-
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:passwordToggleEnabled="true"
-
-            >
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/passwordTxt"
-                android:layout_width="250dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="75dp"
+                android:id="@+id/activitiy_main_password_textInputLayout"
+                style="@style/common_textInputLayout"
                 android:layout_marginTop="20dp"
                 android:drawableStart="@drawable/ic_action_password"
-                android:hint=" Password"
+                android:hint="@string/common_password"
                 android:inputType="textPassword"
-                android:lineSpacingExtra="30sp"
-                android:textColor="@color/colorwhite">
+                android:textColor="@color/colorWhite"
+                android:theme="@style/MyEditText">
 
 
             </com.google.android.material.textfield.TextInputEditText>
@@ -57,19 +54,12 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/loginBtn"
-            android:layout_width="300dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="50dp"
+            android:id="@+id/activity_main_login_button"
+            style="@style/common_button"
             android:layout_marginTop="20dp"
-            android:background="@color/colororange"
-            android:text="Log In"
-            android:textColor="@color/colorwhite"
-            android:textSize="20dp"
-            android:textStyle="bold">
+            android:text="@string/activity_main_logInBtn">
 
         </androidx.appcompat.widget.AppCompatButton>
-
 
 
     </LinearLayout>
